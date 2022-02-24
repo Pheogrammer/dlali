@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_round"
+    tools:context=".MainActivity">
+<Chronometer
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/chronometer"
+    android:format="00:00:00"
+    android:textSize="40sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_start"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_play"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_stop"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_stop"/>
+    </LinearLayout>
+
+</LinearLayout>
